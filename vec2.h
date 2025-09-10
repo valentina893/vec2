@@ -2,8 +2,11 @@
 
 #include <math.h>
 
+#ifndef VEC2_H
+#define VEC2_H
+
 // 2D vector class for math, physics, and miscallaneous applications
-typedef struct vec2 {
+typedef struct {
     float x, y;
 } vec2;
 
@@ -35,3 +38,5 @@ float vec2_magnitude(vec2 a) {
 float vec2_dp(vec2 a, vec2 b) {
     return a.x * b.x + a.y * b.y;
 }
+
+#endif
